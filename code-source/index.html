@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="One Touch - Services et vente de produits de froid">
+    <title>One Touch - Entreprise de Froid</title>
+    <script src="script.js" defer></script>
+    <link href="styles.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="font-sans bg-gray-100 text-gray-800">
+    <!-- Header -->
+    <header class="bg-blue-600 text-white py-4">
+        <div class="container mx-auto flex justify-between items-center px-6">
+            <div class="contact-info flex space-x-6">
+                <span>📞 506-855-6489</span>
+                <span>📧 info@onetouchheatandcool.com</span>
+            </div>
+            <a href="#Contactez-Nous" class="bg-white text-blue-600 font-bold py-2 px-4 rounded hover:bg-blue-100 transition">
+                Request a Quote
+            </a>
+        </div>
+    </header>
+    <!-- Navbar -->
+    <header class="bg-blue-600 text-white">
+        <div class="container mx-auto flex justify-between items-center p-4">
+            <img src="2023_logo_rs.png" alt="One Touch Heat & Cool Logo" class="h-16">
+            <nav class="hidden md:flex space-x-6">
+                <a href="#hero" class="hover:underline">Accueil</a>
+                <a href="#services" class="hover:underline">Services</a>
+                <a href="#apropos" class="hover:underline">À propos</a>
+                <a href="#contact" class="hover:underline">Contact</a>
+            </nav>
+            <button id="menu-button" class="md:hidden focus:outline-none">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+      </svg>
+    </button>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-blue-600 text-white">
+            <a href="#hero" class="block px-4 py-2">Accueil</a>
+            <a href="#services" class="block px-4 py-2">Services</a>
+            <a href="#apropos" class="block px-4 py-2">À propos</a>
+            <a href="#contact" class="block px-4 py-2">Contact</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="bg-cover bg-center h-screen" style="background-image: url('path/to/your-image.jpg');">
+        <div class="bg-black bg-opacity-50 h-full flex flex-col justify-center items-center text-center text-white">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4">Solutions de Froid Professionnelles</h1>
+            <p class="text-lg md:text-xl mb-6">Services et vente de produits de froid pour entreprises et particuliers.</p>
+            <a href="#services" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Voir nos services</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-gray-100">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-6">Nos Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Service 1 -->
+                <div class="p-6 bg-white shadow-md rounded-lg">
+                    <img src="path/to/your-image.jpg" alt="Service 1" class="w-full h-48 object-cover rounded-t-lg">
+                    <h3 class="text-xl font-bold mt-4">Installation</h3>
+                    <p class="text-gray-600">Installation de systèmes de froid pour tous vos besoins.</p>
+                </div>
+                <!-- Service 2 -->
+                <div class="p-6 bg-white shadow-md rounded-lg">
+                    <img src="path/to/your-image.jpg" alt="Service 2" class="w-full h-48 object-cover rounded-t-lg">
+                    <h3 class="text-xl font-bold mt-4">Réparation</h3>
+                    <p class="text-gray-600">Réparation rapide et efficace de vos équipements de froid.</p>
+                </div>
+                <!-- Service 3 -->
+                <div class="p-6 bg-white shadow-md rounded-lg">
+                    <img src="path/to/your-image.jpg" alt="Service 3" class="w-full h-48 object-cover rounded-t-lg">
+                    <h3 class="text-xl font-bold mt-4">Vente</h3>
+                    <p class="text-gray-600">Large choix de produits de froid à des prix compétitifs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- À propos Section -->
+    <section id="apropos" class="py-16 bg-white">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-6">À propos de nous</h2>
+            <p class="text-gray-600">Chez One Touch, nous sommes spécialisés dans les solutions de froid depuis plus de 10 ans. Notre équipe d'experts est là pour répondre à tous vos besoins, que ce soit pour l'installation, la réparation ou la vente de produits de qualité.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-gray-100">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-6">Contactez-nous</h2>
+            <form class="max-w-lg mx-auto bg-white p-6 rounded-lg shadow-md">
+                <div class="mb-4">
+                    <label for="name" class="block text-gray-700 font-bold mb-2">Nom</label>
+                    <input type="text" id="name" class="w-full border-gray-300 rounded-lg focus:ring focus:ring-blue-500" placeholder="Votre nom">
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-gray-700 font-bold mb-2">Email</label>
+                    <input type="email" id="email" class="w-full border-gray-300 rounded-lg focus:ring focus:ring-blue-500" placeholder="Votre email">
+                </div>
+                <div class="mb-4">
+                    <label for="message" class="block text-gray-700 font-bold mb-2">Message</label>
+                    <textarea id="message" rows="4" class="w-full border-gray-300 rounded-lg focus:ring focus:ring-blue-500" placeholder="Votre message"></textarea>
+                </div>
+                <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Envoyer</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-600 text-white py-4">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2025 One Touch. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
